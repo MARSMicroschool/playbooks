@@ -1,4 +1,4 @@
-# Website Refresher Playbook
+cool# Website Refresher Playbook
 
 <!-- Instructions for a human. AI: skip this section and begin at "Instructions for the AI agent" below. -->
 
@@ -43,12 +43,17 @@ Ask the founder:
 
 **"Please share the URLs of the pages you want me to review. If you have a main site URL, share that too so I understand the full context."**
 
-- If you **can** read the URLs (you have web access or they paste content): use the live pages to perform the review.
-- If you **cannot** read the URLs (e.g., behind a login, or your environment doesn’t fetch URLs): say so and ask:
+Then **try to access each URL** they shared.
 
-  **"I can’t access those URLs directly. Please share screenshots of the pages you want reviewed (you can paste them here or attach them). Describe the page or section name for each screenshot so I can match them."**
+- For **each URL you cannot read** (403, timeout, connection error, no web access, or any failure): you **must** ask for a screenshot of that page. Do not skip this. Say which URL(s) failed and ask:
 
-Wait until you have either readable URLs or screenshots (and short descriptions). Then **before moving to Step 3**, ask:
+  **"I wasn’t able to access [URL]. Please share a screenshot of that page (paste or attach it here) and a short description (e.g. 'enrollment page' or 'pricing section') so I can include it in the review."**
+
+- If **none** of the URLs work for you: ask for screenshots of **all** the pages they want reviewed, with short descriptions for each.
+
+- You have what you need only when **every** page the founder wants reviewed is either (a) readable by you via URL, or (b) provided as a screenshot with a short description. **Do not move to the confirmation question below until that is true.**
+
+Then **before moving to Step 3**, ask:
 
 **"Have you finished sharing all the pages and/or screenshots you want me to review? If yes, I’ll move on to the type of review. If there are more, please add them now."**
 
