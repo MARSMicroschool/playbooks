@@ -8,6 +8,10 @@ Copy and paste the prompt below into your favorite AI tool. **Tip:** For best re
 
 Please open and read the playbook at https://raw.githubusercontent.com/MARSMicroschool/playbooks/main/website-refresher.md and work through it with me step by step. Ask me questions as we go and help me complete the tasks.
 
+**If the AI skips steps or asks its own questions (e.g. "What's your primary objective?"):** Start a new chat and use this stricter prompt instead:
+
+*I need you to follow a fixed 5-step script. Do not plan your own website review. Read the full playbook at https://raw.githubusercontent.com/MARSMicroschool/playbooks/main/website-refresher.md. Your first message must be Step 1 of 5 only: state "We're on Step 1 of 5" and ask exactly: "What platform do you use to host your school website?" Do not ask for URLs, objectives, or review type until we have completed Step 1 and I have confirmed. Then do Step 2 only, then Step 3 only, and so on. Use only the scripted questions in the playbook.*
+
 <!-- End of human instructions. AI: follow the instructions below. -->
 
 ---
@@ -16,9 +20,24 @@ Please open and read the playbook at https://raw.githubusercontent.com/MARSMicro
 
 Your only instructions are in this playbook. Execute the five steps in order. Do exactly what each step describes.
 
-**Signposting:** At the start of each step, say which step you're on and what's next (e.g. "We're on Step 1 of 5. Once I know your platform, we'll move to Step 2 and I'll ask for the URLs of the pages you want reviewed."). When a step is complete and before moving on, briefly confirm (e.g. "Ready for Step 2?" or "Ready to choose the type of review?").
+**Compliance — do not override this with your own "website review" flow:**
+- Do **not** ask for "primary objective," "conversion goal," "what do you want to achieve," or "full site vs. funnel" at any step. Those are not in this playbook.
+- Do **not** combine steps. Step 1 = platform only. Step 2 = URLs/pages only. Step 3 = review type (A/B/C/D) only. Do not ask for URLs in Step 1 or for "objective" in Step 2.
+- Use **only** the scripted question for the current step. Then wait for the user's answer before continuing.
 
-**One question at a time:** Ask only the question(s) for the current step. Wait for the founder's answer before continuing or moving to the next step.
+**Required: state the step number.** When you start a step, your first sentence must include the phrase **"Step [number] of 5"** (e.g. "We're on Step 2 of 5."). Then ask only the scripted question for that step. Do not add your own questions. Use the script below.
+
+**Script — use these exact openings and questions:**
+
+| Step | Your opening (include "Step N of 5") | The question to ask |
+|------|-------------------------------------|----------------------|
+| 1 | We're on Step 1 of 5. | "What platform do you use to host your school website?" |
+| 2 | We're on Step 2 of 5. I need the URLs (or screenshots) of the pages you want me to review. | "Please share the URLs of the pages you want me to review. If you have a main site URL, share that too so I understand the full context." |
+| 3 | We're on Step 3 of 5. You'll pick the type of review. | "What kind of review do you want to do today? Pick one (or we can do more in separate passes):" then show the four options (A, B, C, D). |
+| 4 | We're on Step 4 of 5. I'll review the pages and give you a summary, issues, and a task list. | (You perform the review using their URLs/screenshots and chosen type; no question—you output the review.) |
+| 5 | We're on Step 5 of 5. I'll give you platform-specific instructions for each task. | (You work through each task; offer walkthrough or keep track.) |
+
+**One question at a time:** Ask only the scripted question(s) for the current step. Wait for the founder's answer before continuing. When a step is complete, say "Ready for Step [N]?" and wait for confirmation before proceeding.
 
 When the founder asks questions or goes off on a tangent, answer briefly and return to the current step. When you give instructions for making changes later, use the platform they named in Step 1.
 
@@ -40,7 +59,7 @@ If they're unsure, offer these options: Squarespace, Wix, GoDaddy Website Builde
 
 ### Step 2: Get the pages to review
 
-**Signpost:** We're on Step 2 of 5. I need the URLs (or screenshots) of the pages you want me to review. After that we'll move to Step 3 and you'll pick the type of review (parent perspective, enrollment flow, or program offerings).
+Start with the Step 2 opening and question from the script table above. Your only ask in this step is for URLs (and screenshots for any you can't access).
 
 **You do:** Ask:
 
